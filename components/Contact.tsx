@@ -4,8 +4,9 @@ import { PERSONAL_INFO } from '@/data/portfolio-data';
 
 export default function Contact() {
   return (
-    <section id="contact" className="min-h-screen flex flex-col justify-center py-20 px-4 md:px-8 relative text-center">
-      <div className="bg-gradient-to-b from-transparent to-purple-900/10 p-1 rounded-[3rem] inline-block w-full max-w-3xl">
+    <section id="contact" className="min-h-screen flex flex-col justify-center items-center py-20 px-4 md:px-8 relative text-center">
+      
+      <div className="bg-gradient-to-b from-transparent to-purple-900/10 p-1 rounded-[3rem] w-full max-w-3xl">
         <div className="bg-[#0a0a0a] rounded-[3rem] p-8 md:p-16 border border-white/5 shadow-2xl">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
             Let's collaborate.
