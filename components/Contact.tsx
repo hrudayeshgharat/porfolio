@@ -37,7 +37,8 @@ export default function Contact() {
       </div>
 
       <footer className="mt-20 text-sm text-gray-600 pb-20">
-        <p>© {new Date().getFullYear()} {PERSONAL_INFO.name}. Built with React & Tailwind.</p>
+        <p>© {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.</p>
+        <p className="mt-2 opacity-50">Designed & Built by me using Next.js & Tailwind.</p>
       </footer>
     </section>
   );
