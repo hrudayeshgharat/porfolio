@@ -17,43 +17,43 @@ export default function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
           Open to Opportunities
         </div>
-        
+
         <h1 className="text-5xl md:text-8xl font-extrabold tracking-tight mb-6">
-          Hello, I'm <br/>
+          Hello, I'm <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400">
             {PERSONAL_INFO.name}.
           </span>
         </h1>
-        
+
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed mb-10">
           {PERSONAL_INFO.bio}
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <a 
-            href="/resume.pdf" 
-            download="Hrudayesh_Resume.pdf"
+          <a
+            href="./Hrudayesh_CV.pdf"
+            download="Hrudayesh_CV.pdf"
             className="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition-colors flex items-center gap-2"
           >
             <Download size={20} />
             Download Resume
           </a>
 
-          <button 
+          <button
             onClick={() => scrollTo('projects')}
             className="px-8 py-3 rounded-full bg-white/5 text-white border border-white/10 font-bold hover:bg-white/10 transition-colors"
           >
             View Work
           </button>
-          <a 
+          <a
             href={PERSONAL_INFO.socials.linkedin}
-            target="_blank" 
+            target="_blank"
             rel="noreferrer"
             className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
           >
             <Linkedin size={24} />
           </a>
-           <a 
+          <a
             href={`mailto:${PERSONAL_INFO.email}`}
             className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
           >
@@ -61,9 +61,9 @@ export default function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
           </a>
         </div>
       </div>
-      
+
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/30">
-         <ChevronDown size={32} />
+        <ChevronDown size={32} />
       </div>
     </section>
   );

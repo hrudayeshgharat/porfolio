@@ -1,5 +1,6 @@
 "use client";
 import { User, Code, Briefcase, Mail } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 type NavItemProps = {
   icon: React.ElementType;
@@ -12,8 +13,8 @@ const NavItem = ({ icon: Icon, label, active, onClick }: NavItemProps) => (
   <button
     onClick={onClick}
     className={`relative group p-3 rounded-2xl transition-all duration-300 ease-out
-      ${active 
-        ? 'bg-white text-black shadow-lg -translate-y-2 scale-110' 
+      ${active
+        ? 'bg-white text-black shadow-lg -translate-y-2 scale-110'
         : 'bg-white/10 text-white/70 hover:bg-white/20 hover:text-white hover:-translate-y-1'
       }`}
     aria-label={label}
@@ -26,6 +27,14 @@ const NavItem = ({ icon: Icon, label, active, onClick }: NavItemProps) => (
 );
 
 export default function Navigation({ activeSection, scrollTo }: { activeSection: string, scrollTo: (id: string) => void }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
       <div className="flex items-center gap-2 p-2 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/50">
