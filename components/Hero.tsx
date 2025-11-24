@@ -31,7 +31,7 @@ export default function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
 
         <div className="flex flex-wrap gap-4">
           <a
-            href="./Hrudayesh_CV.pdf"
+            href="/Hrudayesh_CV.pdf"
             download="Hrudayesh_CV.pdf"
             className="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-gray-200 transition-colors flex items-center gap-2"
           >
