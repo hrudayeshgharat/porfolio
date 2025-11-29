@@ -70,21 +70,21 @@ export const PROJECTS = [
     title: "Retail Sales Dashboard",
     description: "Interactive Microsoft Power BI dashboard tracking revenue trends and sales performance to enable data-driven stock management strategies.",
     tags: ["Power BI", "SQL", "Pandas", "EDA"],
-    link: "#",
+    link: "https://github.com/hrudayeshgharat/Retail-Sales-Dashboard",
     color: "from-yellow-500 to-orange-500"
   },
   {
     title: "Telecom Churn Prediction",
     description: "Machine learning classification model identifying churn drivers. Strategic retention recommendations based on advanced statistical modeling.",
     tags: ["Scikit-learn", "Logistic Regression", "Statistics"],
-    link: "#",
+    link: "https://github.com/hrudayeshgharat/telcom_customer_churn_prediction",
     color: "from-purple-500 to-pink-500"
   },
   {
     title: "Handwritten Digit Recognition",
     description: "Convolutional Neural Network (CNN) for digit recognition. Preprocessed 70,000-image MNIST dataset to optimize deep learning input quality.",
     tags: ["Deep Learning", "CNN", "Keras", "TensorFlow"],
-    link: "#",
+    link: "https://github.com/hrudayeshgharat/Handwritten-Digit-Recognition-using-CNN",
     color: "from-emerald-500 to-teal-500"
   }
 ];

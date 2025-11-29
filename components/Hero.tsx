@@ -46,6 +46,14 @@ export default function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
             View Work
           </button>
           <a
+            href={PERSONAL_INFO.socials.github}
+            target="_blank"
+            rel="noreferrer"
+            className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
+          >
+            <Github size={24} />
+          </a>
+          <a
             href={PERSONAL_INFO.socials.linkedin}
             target="_blank"
             rel="noreferrer"
