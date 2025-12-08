@@ -17,8 +17,8 @@ export default function About() {
                 <h3 className="text-sm uppercase tracking-wider text-gray-500 mb-3 font-semibold">{group.category}</h3>
                 <div className="flex flex-wrap gap-2">
                   {group.items.map((skill, sIdx) => (
-                    <span 
-                      key={sIdx} 
+                    <span
+                      key={sIdx}
                       className="px-4 py-2 rounded-lg bg-white/5 border border-white/5 text-gray-300 text-sm hover:bg-white/10 hover:scale-105 transition-all cursor-default"
                     >
                       {skill}
@@ -29,7 +29,7 @@ export default function About() {
             ))}
           </div>
         </div>
-        
+
         <div className="space-y-8">
           <div className="bg-gradient-to-br from-purple-900/20 to-blue-900/20 p-8 rounded-3xl border border-white/5 backdrop-blur-sm">
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
@@ -50,17 +50,32 @@ export default function About() {
           </div>
 
           <div className="bg-white/5 p-6 rounded-3xl border border-white/5">
-             <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+            <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
               <Award className="text-yellow-500" /> Certifications
-             </h3>
-             <ul className="space-y-2">
-               {CERTIFICATIONS.map((cert, i) => (
-                 <li key={i} className="text-gray-300 flex items-center gap-2">
-                   <span className="w-1.5 h-1.5 rounded-full bg-yellow-500"></span>
-                   {cert}
-                 </li>
-               ))}
-             </ul>
+            </h3>
+            <ul className="space-y-2">
+              {CERTIFICATIONS.map((cert, i) => (
+                <li key={i} className="text-gray-300 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-500"></span>
+                  {cert.link ? (
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-yellow-500 transition-colors inline-flex items-center gap-1 group"
+                    >
+                      <span className="group-hover:underline">{cert.name}</span>
+                      {cert.issuer && <span className="text-gray-500 text-sm no-underline">({cert.issuer})</span>}
+                    </a>
+                  ) : (
+                    <span className="flex items-center gap-1">
+                      {cert.name}
+                      {cert.issuer && <span className="text-gray-500 text-sm">({cert.issuer})</span>}
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

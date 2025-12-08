@@ -34,7 +34,16 @@ export const EDUCATION = [
 ];
 
 export const CERTIFICATIONS = [
-  "Google Data Analysis with Python (Coursera)"
+  {
+    name: "Google Data Analysis with Python",
+    issuer: "Coursera",
+    link: "https://coursera.org/share/b1f2c890d4afda95d39856a572b32005"
+  },
+  {
+    name: "Introduction to Data Science",
+    issuer: "Cisco",
+    link: "https://www.credly.com/badges/b6b6ac12-648b-4960-9a93-4248eb9293f1/public_url"
+  }
 ];
 
 export const EXPERIENCES = [
