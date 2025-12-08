@@ -69,10 +69,10 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Automated Community System",
-    description: "Modular automation tool using Python and NLP-based interaction models to automate user engagement, ensuring 24/7 moderation coverage.",
-    tags: ["Python", "MongoDB", "TensorFlow", "NLP"],
-    link: "#",
+    title: "Ecommerce Dashboard",
+    description: "Interactive Microsoft Power BI dashboard tracking revenue trends and sales performance to enable data-driven stock management strategies.",
+    tags: ["Power BI", "SQL", "Pandas", "EDA"],
+    link: "https://github.com/hrudayeshgharat/Ecommerce-Project",
     color: "from-blue-500 to-cyan-500"
   },
   {
