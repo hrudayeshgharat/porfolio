@@ -43,6 +43,11 @@ export const CERTIFICATIONS = [
     name: "Introduction to Data Science",
     issuer: "Cisco",
     link: "https://www.credly.com/badges/b6b6ac12-648b-4960-9a93-4248eb9293f1/public_url"
+  },
+  {
+    name: "5-Day AI Agents Intensive Course with Google",
+    issuer: "Kaggle",
+    link: "https://www.kaggle.com/certification/badges/hrudayeshgharat/105"
   }
 ];
 
