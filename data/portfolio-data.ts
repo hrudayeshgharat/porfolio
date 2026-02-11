@@ -20,6 +20,12 @@ export const SKILLS = [
 
 export const EDUCATION = [
   {
+    degree: "Master of Computer Application (MCA)",
+    school: "Manipal University, Jaipur",
+    year: "2026 - 2028",
+    grade: "---"
+  },
+  {
     degree: "Bachelor of Computer Application (BCA)",
     school: "Sandip University, Nashik",
     year: "2022 - 2025",
