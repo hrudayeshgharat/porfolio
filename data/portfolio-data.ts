@@ -106,5 +106,12 @@ export const PROJECTS = [
     tags: ["Deep Learning", "CNN", "Keras", "TensorFlow"],
     link: "https://github.com/hrudayeshgharat/Handwritten-Digit-Recognition-using-CNN",
     color: "from-emerald-500 to-teal-500"
+  },
+  {
+    title: "Movie Industry Analytics Dashboard",
+    description: "Built an end-to-end movie analytics solution using TMDB data; cleaning and transforming 5,000+ records, engineering key metrics like ROI and trends, and creating an interactive Power BI dashboard with advanced visuals. Delivered insights on top genres and directors, enabling data-driven decisions and reducing reporting effort significantly.",
+    tags: ["Power BI", "SQL", "Pandas", "EDA"],
+    link: "https://github.com/hrudayeshgharat/movie-analytics-dashboard",
+    color: "from-blue-500 to-cyan-500"
   }
 ];
