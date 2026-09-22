@@ -9,7 +9,7 @@ export default function Projects() {
       <div className="flex items-end justify-between mb-12">
         <div>
           <h2 className="text-4xl font-bold mb-2">Featured Projects</h2>
-          <p className="text-gray-400">Data analysis and ML models I've built.</p>
+          <p className="text-gray-400">Data analytics and business intelligence projects.</p>
         </div>
       </div>
       

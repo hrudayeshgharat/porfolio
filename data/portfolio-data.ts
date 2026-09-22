@@ -1,9 +1,9 @@
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+
 
 export const PERSONAL_INFO = {
   name: "Hrudayesh Gharat",
   role: "Data Analyst",
-  bio: "Results-oriented Data Analyst with expertise in Python, SQL, and Business Intelligence. Proven track record of designing end-to-end ETL pipelines, performing statistical analysis, and creating interactive dashboards to drive business growth.",
+  bio: "I turn complex data into clear decisions with Python, SQL, and Power BI. My focus is on exploring data, building useful dashboards, and communicating the insights behind business performance.",
   email: "hrud.gharat@gmail.com",
   socials: {
     linkedin: "https://linkedin.com/in/hrudayeshgharat",
@@ -14,7 +14,7 @@ export const PERSONAL_INFO = {
 
 export const SKILLS = [
   { category: "Data Analysis & BI", items: ["Python", "SQL", "Power BI", "Tableau", "Excel", "EDA", "A/B Testing"] },
-  { category: "Machine Learning", items: ["Scikit-learn", "TensorFlow", "Pandas", "NumPy", "Keras", "Data Mining"] },
+  { category: "Data Preparation", items: ["Pandas", "NumPy", "Data Cleaning", "ETL Pipelines"] },
   { category: "Engineering & Tools", items: ["ETL Pipelines", "MongoDB", "Git", "Automated Systems"] }
 ];
 
@@ -57,61 +57,5 @@ export const CERTIFICATIONS = [
   }
 ];
 
-export const EXPERIENCES = [
-  {
-    company: "Personal Project",
-    role: "Python Developer & Data Analyst",
-    period: "Nov 2025",
-    description: "Engineered a modular automation tool using Python to streamline data collection, reducing manual data entry time by 30%. Architected scalable MongoDB database schemas improving query performance by 20%."
-  },
-  {
-    company: "Personal Project",
-    role: "Data Analyst (Retail Sales)",
-    period: "Apr 2025 - Jul 2025",
-    description: "Executed comprehensive EDA on 50,000+ records using SQL and pandas with 99% accuracy. Designed an interactive Power BI dashboard identifying opportunities worth 500,000 INR."
-  },
-  {
-    company: "Personal Project",
-    role: "Data Scientist (Telecom)",
-    period: "Dec 2024 - Feb 2025",
-    description: "Analyzed telecom subscriber behavior to identify churn drivers. Built a Logistic Regression model achieving 88% accuracy and formulated retention strategies projected to reduce attrition by 15%."
-  }
-];
-
-export const PROJECTS = [
-  {
-    title: "Ecommerce Dashboard",
-    description: "Interactive Microsoft Power BI dashboard tracking revenue trends and sales performance to enable data-driven stock management strategies.",
-    tags: ["Power BI", "SQL", "Pandas", "EDA"],
-    link: "https://github.com/hrudayeshgharat/Ecommerce-Project",
-    color: "from-blue-500 to-cyan-500"
-  },
-  {
-    title: "Retail Sales Dashboard",
-    description: "Interactive Microsoft Power BI dashboard tracking revenue trends and sales performance to enable data-driven stock management strategies.",
-    tags: ["Power BI", "SQL", "Pandas", "EDA"],
-    link: "https://github.com/hrudayeshgharat/Retail-Sales-Dashboard",
-    color: "from-yellow-500 to-orange-500"
-  },
-  {
-    title: "Telecom Churn Prediction",
-    description: "Machine learning classification model identifying churn drivers. Strategic retention recommendations based on advanced statistical modeling.",
-    tags: ["Scikit-learn", "Logistic Regression", "Statistics"],
-    link: "https://github.com/hrudayeshgharat/telcom_customer_churn_prediction",
-    color: "from-purple-500 to-pink-500"
-  },
-  {
-    title: "Handwritten Digit Recognition",
-    description: "Convolutional Neural Network (CNN) for digit recognition. Preprocessed 70,000-image MNIST dataset to optimize deep learning input quality.",
-    tags: ["Deep Learning", "CNN", "Keras", "TensorFlow"],
-    link: "https://github.com/hrudayeshgharat/Handwritten-Digit-Recognition-using-CNN",
-    color: "from-emerald-500 to-teal-500"
-  },
-  {
-    title: "Movie Industry Analytics Dashboard",
-    description: "Built an end-to-end movie analytics solution using TMDB data; cleaning and transforming 5,000+ records, engineering key metrics like ROI and trends, and creating an interactive Power BI dashboard with advanced visuals. Delivered insights on top genres and directors, enabling data-driven decisions and reducing reporting effort significantly.",
-    tags: ["Power BI", "SQL", "Pandas", "EDA"],
-    link: "https://github.com/hrudayeshgharat/movie-analytics-dashboard",
-    color: "from-blue-500 to-cyan-500"
-  }
-];
+export const EXPERIENCES = [{company: 'Personal Project', role: 'Data Analyst · Superstore Dashboard', period: 'Power BI', description: 'Built a three-page report covering executive sales performance, product profitability, and customer analysis, with interactive slicers and page navigation.'}];
+export { PROJECTS } from './projects';

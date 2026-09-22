@@ -12,7 +12,7 @@ export default function Contact() {
             Let's collaborate.
           </h2>
           <p className="text-xl text-gray-400 mb-10 max-w-xl mx-auto">
-            I'm available for data analysis and machine learning roles.
+            I'm available for data analysis and business intelligence roles.
           </p>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">

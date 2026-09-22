@@ -1,34 +1,7 @@
-const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || "";
-
-export const callGemini = async (prompt: string, systemInstruction = "") => {
+export async function callGemini(prompt: string, _systemInstruction = ''): Promise<string> {
   try {
-    if (!apiKey) {
-      console.warn("Gemini API Key is missing. Please check your .env.local file.");
-      return "I'm not fully configured yet. Please add a valid API key.";
-    }
-
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          systemInstruction: { parts: [{ text: systemInstruction }] },
-        }),
-      }
-    );
-
-    if (!response.ok) {
-      throw new Error(`API Error: ${response.status}`);
-    }
-
+    const response = await fetch('/api/assistant', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ prompt }), signal: AbortSignal.timeout(25000) });
     const data = await response.json();
-    return data.candidates?.[0]?.content?.parts?.[0]?.text || "I couldn't generate a response at this time.";
-  } catch (error) {
-    console.error("Gemini API Error:", error);
-    return "Sorry, I'm having trouble connecting to the AI service right now.";
-  }
-};
+    return data.text || 'The assistant is unavailable right now. Please explore the project details or contact Hrudayesh directly.';
+  } catch { return 'The assistant could not connect. Please try again or contact Hrudayesh directly.'; }
+}
