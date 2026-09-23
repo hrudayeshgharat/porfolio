@@ -34,3 +34,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Customer feedback intelligence
+
+Signal now lives in the independent folder `H:\Codes\signal-feedback`, with its own dependencies, data, AI configuration, tests, and README. Run `npm run dev` there to start it on port 3001. This portfolio retains its project card, screenshot, and a `/feedback` handoff route. The project card opens https://signal-feedback-ochre.vercel.app/ directly. The `/feedback` route also redirects there; `SIGNAL_APP_URL` can override the redirect destination.
+

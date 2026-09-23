@@ -9,6 +9,27 @@ export type Project = {
 // Optional imageFolder overrides the folder name; images is an optional fallback gallery.
 export const PROJECTS: Project[] = [
   {
+    id: 'signal-feedback',
+    slug: 'signal-feedback',
+    title: 'Signal — Feedback Intelligence',
+    category: 'AI · CUSTOMER ANALYTICS',
+    question: 'What are customers telling us, and which issues deserve a closer look?',
+    focus: 'Interactive app · Real Amazon reviews',
+    description: 'A working customer feedback analysis app with CSV import, sentiment and topic classification, review-level evidence, product comparisons, and evaluation against reference labels. Includes a transparent local keyword baseline and an optional Gemini AI analysis mode.',
+    tags: ['Gemini AI', 'Text Analytics', 'Next.js', 'TypeScript'],
+    method: [
+      'Validate review CSVs, remove exact duplicates, and calculate sentiment distributions, product comparisons, and monthly proportions.',
+      'Compare a local keyword baseline with structured Gemini classifications. Inspect explanations and source reviews behind each topic count.',
+      'Evaluate predictions with accuracy, macro F1, a confusion matrix, and a list of disagreements. Export filtered reviews and an evidence-backed report.'
+    ],
+    outcome: 'An end-to-end portfolio demo that connects review analysis to inspectable evidence. The default includes 120 real Amazon reviews with source attribution; an optional fictional labeled sample demonstrates evaluation without claiming benchmark performance.',
+    stack: 'An independent Next.js and TypeScript application. Gemini runs through a server-side endpoint; API keys stay on the server, and local baseline analysis works without an AI connection.',
+    link: 'https://signal-feedback-ochre.vercel.app/',
+    linkLabel: 'Open feedback app',
+    color: 'from-emerald-500 to-teal-500',
+    images: [{src: '/projects/signal-feedback.png', alt: 'Signal customer feedback app showing sentiment distribution, topic breakdowns, and review metrics', caption: 'Working app · real Amazon review sample · local baseline analysis'}]
+  },
+  {
     "id": "superstore",
     "slug": "superstore",
     "title": "Superstore Dashboard",
@@ -50,3 +71,5 @@ export const PROJECTS: Project[] = [
     ]
   }
 ];
+
+

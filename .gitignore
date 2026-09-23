@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Feedback app local tooling
+/.feedback-tools/
+/.feedback-dev*.log
