@@ -69,6 +69,27 @@ export const PROJECTS: Project[] = [
         "caption": "Customers · layout diagram from PBIX; not a screenshot"
       }
     ]
+  },
+  {
+    id: 'bangkok-airbnb-market-analysis',
+    slug: 'bangkok-airbnb-market-analysis',
+    title: 'Bangkok Airbnb Market Analysis',
+    category: 'DATA ANALYTICS · SQL',
+    question: 'How do room type, neighbourhood, host status, ratings, and availability relate to listing prices?',
+    focus: '30,922 Bangkok listings · September 2026 snapshot',
+    description: 'A PostgreSQL analysis of Inside Airbnb listing data for Bangkok. The project preserves the raw import, documents cleaning decisions in a log, and uses an analysis view to answer market questions without silently dropping records.',
+    tags: ['PostgreSQL', 'SQL', 'Data Cleaning', 'Market Analysis'],
+    method: [
+      'Load the raw listings as text, retain an unchanged raw table, and create a separate cleaned table with a cleaning log.',
+      'Convert prices to numeric THB values, strip HTML from listing names, and flag stale-scrape rows and prices above 50,000 THB instead of deleting them.',
+      'Build an analysis view and query pricing by room type and neighbourhood, superhost comparisons, rating bands, host concentration, and availability.'
+    ],
+    outcome: 'The analysis view contains 27,646 priced, current-scrape listings after excluding flagged outliers. Findings include higher median prices and ratings for superhosts, price variation by neighbourhood and room type, and a highly fragmented host market. The project notes that listed nightly prices are not completed booking amounts.',
+    stack: 'PostgreSQL and pgAdmin 4 handle loading, cleaning, and analysis. Python with pandas trims the source export to a loadable set of columns.',
+    link: 'https://github.com/hrudayeshgharat/Bangkok-Airbnb-Market-Analysis',
+    linkLabel: 'View SQL project on GitHub',
+    color: 'from-rose-500 to-orange-500',
+    imageFolder: 'Bangkok-Airbnb-Market-Analysis'
   }
 ];
 
